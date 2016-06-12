@@ -88,12 +88,11 @@ body {
 
 header {
 	width: 100%;
-	background-color: #ccc;
+	/*background-color: #ccc;*/
 }
 
 header .logo {
 	float: left;
-	background-color: red;
 }
 
 header .logo-link {
@@ -123,5 +122,52 @@ header .logo-link span {
 	font-weight: bold;
 }
 
+header .logo-link:hover {
+	color: #FFD23E;
+	transition: 0.3s;
+}
+
+header .logo-link:hover span {
+	color: #FFD717;
+	transition: 0.5s;
+}
+
+header .logo-link:hover span{
+	border-bottom: 2px solid #FFD717;
+	border-radius: 10px;
+	transition: 0.5s;
+}
+
+header .nav {
+	margin: 0;
+	padding: 65px 0 52px 0;
+	line-height: 30px;
+}
+
+header .nav li {
+	display: inline-block;
+	float: left;
+	padding: 0 39px 0 0;
+	list-style: none;
+}
+
+header .nav a {
+	font-size: 16px;
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	color: #202242;
+	text-transform: uppercase;
+}
+
+header .nav .nav-active {
+	font-weight: bold;
+	color: #ffe13e;
+}
+
+header .nav a:hover {
+	color: #ffe13e;
+	
+	transition: 0.3s;
+}
 
 
