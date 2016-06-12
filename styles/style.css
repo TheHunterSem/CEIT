@@ -87,8 +87,10 @@ body {
 }
 
 header {
+	/*position: fixed;
+	z-index: 999;*/
 	width: 100%;
-	/*background-color: #ccc;*/
+	background-color: #fff;
 }
 
 header .logo {
@@ -139,6 +141,7 @@ header .logo-link:hover span{
 }
 
 header .nav {
+	float: left;
 	margin: 0;
 	padding: 65px 0 52px 0;
 	line-height: 30px;
@@ -146,9 +149,12 @@ header .nav {
 
 header .nav li {
 	display: inline-block;
-	float: left;
-	padding: 0 39px 0 0;
+	padding: 0 34px 0 0;
 	list-style: none;
+}
+
+header .nav li:last-child {
+	padding: 0;
 }
 
 header .nav a {
@@ -166,8 +172,70 @@ header .nav .nav-active {
 
 header .nav a:hover {
 	color: #ffe13e;
-	
 	transition: 0.3s;
 }
 
+header .right-info {
+	float: right;
+	padding: 31px 0 37px 45px;
+	border-left: 1px solid #ebebeb;
+}
 
+header .right-question p {
+	padding: 0 0 25px 0;
+	margin: 0;
+	font-size: 12px;
+	line-height: 30px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	color: #202242;
+}
+
+header .live-chat {
+	float: left;
+}
+
+header .live-chat a {
+	padding: 14px 22px 10px 22px;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 24px;
+	color: #202242;
+	background-color: #ffe13e;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+}
+
+header .live-chat a:hover {
+	background-color: #fff;
+	border: 1px solid #000;
+	padding: 14px 22px 10px 21px;
+	transition: 0.3s;
+}
+
+header .number {
+	float: right;
+}
+
+.number span {
+	padding: 0 0 0 27px;
+	font-size: 24px;
+	line-height: 24px;
+	color: #202242;
+	font-family: 'Lato';
+	font-weight: bold;
+	border-left: 1px solid #babbc4;
+}
+
+.screen .__splash {
+	background: url(../images/top-screen-bg.jpg);
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.screen.__splash .container {
+	position: relative;
+	height: 100%;
+}
