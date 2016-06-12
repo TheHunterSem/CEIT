@@ -2,3 +2,126 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
+@font-face {
+    font-family: 'Rockwell', serif;
+    src: url('../fonts/rockwell-bold.eot');
+    src: url('../fonts/rockwell-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/rockwell-bold.woff2') format('woff2'),
+         url('../fonts/rockwell-bold.woff') format('woff'),
+         url('../fonts/rockwell-bold.ttf') format('truetype'),
+         url('../fonts/rockwell-bold.svg#rockwell-boldregular') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rockwell', serif;
+    src: url('../fonts/rockwell-regular.eot');
+    src: url('../fonts/rockwell-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/rockwell-regular.woff') format('woff'),
+         url('../fonts/rockwell-regular.ttf') format('truetype'),
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/lato-bold.eot');
+    src: url('../fonts/lato-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-bold.woff2') format('woff2'),
+         url('../fonts/lato-bold.woff') format('woff'),
+         url('../fonts/lato-bold.ttf') format('truetype'),
+         url('../fonts/lato-bold.svg#latobold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway', sans-serif;
+    src: url('../fonts/raleway-bold.eot');
+    src: url('../fonts/raleway-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-bold.woff2') format('woff2'),
+         url('../fonts/raleway-bold.woff') format('woff'),
+         url('../fonts/raleway-bold.ttf') format('truetype'),
+         url('../fonts/raleway-bold.svg#ralewaybold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway', sans-serif;
+    src: url('../fonts/raleway-regular.eot');
+    src: url('../fonts/raleway-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-regular.woff2') format('woff2'),
+         url('../fonts/raleway-regular.woff') format('woff'),
+         url('../fonts/raleway-regular.ttf') format('truetype'),
+         url('../fonts/raleway-regular.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway', sans-serif;
+    src: url('../fonts/raleway-semibold.eot');
+    src: url('../fonts/raleway-semibold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-semibold.woff2') format('woff2'),
+         url('../fonts/raleway-semibold.woff') format('woff'),
+         url('../fonts/raleway-semibold.ttf') format('truetype'),
+         url('../fonts/raleway-semibold.svg#ralewaysemibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+	padding: 0 50px;
+}
+
+.container::after {
+    content: '';
+    
+    display: table;
+    clear: both;
+}
+
+header {
+	width: 100%;
+	background-color: #ccc;
+}
+
+header .logo {
+	float: left;
+	background-color: red;
+}
+
+header .logo-link {
+	position: relative;
+	display: inline-block;
+	line-height: 30px;
+	padding: 60px 0 57px 44px;
+	font-family: 'Rockwell', serif;
+	margin: 0 100px 0 0;
+	text-decoration: none;
+	text-align: center;
+	font-size: 30px;
+	color: #202242;
+}
+
+header .logo-link::before {
+	position: absolute;
+	content: '';
+	top: calc(50% - 16px);
+	left:0;
+	width: 26px;
+	height: 32px;
+	background: url('../images/logo.png');
+}
+
+header .logo-link span {
+	font-weight: bold;
+}
+
+
+
