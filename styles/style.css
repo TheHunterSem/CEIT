@@ -87,8 +87,8 @@ body {
 }
 
 header {
-	/*position: fixed;
-	z-index: 999;*/
+	position: fixed;
+	z-index: 999;
 	width: 100%;
 	background-color: #fff;
 }
@@ -227,15 +227,12 @@ header .number {
 	border-left: 1px solid #babbc4;
 }
 
-.screen .__splash {
-	background: url(../images/top-screen-bg.jpg);
-	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+.screen__splash {
+	height: calc(100vh - 147px);
+	min-height: 500px;
+	max-height: 900px;
+	width: 100%;
+    background: url("../images/top-screen-bg.jpg") no-repeat center;
     background-size: cover;
-}
-
-.screen.__splash .container {
-	position: relative;
-	height: 100%;
+    position: relative;
 }
