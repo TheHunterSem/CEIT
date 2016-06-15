@@ -325,6 +325,7 @@ main .main-screen-content .main-screen-shape {
 	font-size: 18px;
 	background-color: #ffe13e;
 	border: none;
+        border-radius: none;
 	color: #2d2d2d;
 	outline: none;
 }
