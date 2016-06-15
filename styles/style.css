@@ -292,12 +292,10 @@ main .main-screen-content p {
 
 main .main-screen-content .main-screen-shape {
 	display: inline-block;
-<<<<<<< HEAD
 	margin: 60px 0 0 0;
 	width: 102px;
 	height: 110px;
 	background: url('../images/main-screen-shape.png')no-repeat center;
-=======
 	margin: 60px 0;
 	width: 102px;
 	height: 110px;
@@ -319,5 +317,4 @@ main .main-screen-content .main-screen-shape {
 	padding: 12px 0 12px 22px;
 	margin: 15px 0 0 15px;
 	outline: none;
->>>>>>> refs/remotes/origin/master
 }
