@@ -232,15 +232,12 @@ main .screen__splash {
     background-size: cover;
     padding: 147px 0 0 0;
     height: calc(100vh - 147px);
-    min-height: 500px;
+    min-height: 700px;
     max-height: 900px;
     z-index: 5;
 }
 
 main .screen__splash .container {
-	width: 1170px;
-	margin: 0 auto;
-	padding: 0 50px;
 	position: relative;
 	z-index: 4;
 }
@@ -285,8 +282,25 @@ main .main-screen-content p {
 
 main .main-screen-content .main-screen-shape {
 	display: inline-block;
-	margin: 60px 0 0 0;
+	margin: 60px 0;
 	width: 102px;
 	height: 110px;
 	background: url('../images/main-screen-shape.png')no-repeat center;
+}
+
+.form-domain {
+	width: 572px;
+	height: 90px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	background: url('../images/form-bg.png')no-repeat center;
+}
+
+.form-domain input[type=search] {
+	display: block;
+	float: left;
+	line-height: 30px;
+	padding: 12px 0 12px 22px;
+	margin: 15px 0 0 15px;
+	outline: none;
 }
