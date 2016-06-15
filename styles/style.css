@@ -301,7 +301,7 @@ main .main-screen-content .main-screen-shape {
 	float: left;
 	width: 275px;
 	padding: 18px 0 18px 23px;
-	margin: 16px 0 0 15px;
+	margin: 17px 0 0 15px;
 	outline: none;
 	border: none;
 	color: #2d2d2d;
@@ -315,3 +315,42 @@ main .main-screen-content .main-screen-shape {
 	line-height: 18px;
 	font-family: 'Raleway', sans-serif;
 }
+
+.input-select {
+	float: left;
+	height: 57px;
+	margin: 17px 0 0 0;
+	padding: 0 22px 0 22px;
+	text-align: center;
+	font-size: 18px;
+	background-color: #ffe13e;
+	border: none;
+	color: #2d2d2d;
+	outline: none;
+}
+
+.btn {
+	display: block;
+    float: left;
+    font-size: 14px;
+    margin: 17px 0 0 0;
+    font-family: "Raleway", sans-serif;
+    color: #202242;
+    font-weight: 600;
+    line-height: 38px;
+    width: 121px;
+    border: 1px solid #ffe13e;
+    background: #ffe13e;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.btn-domain {
+	color: #fff;
+    font-size: 14px;
+    width: 160px;
+    line-height: 53px;
+    outline: none;
+    border-left: 1px solid #fff;
+}
+
