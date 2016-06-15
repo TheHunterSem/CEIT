@@ -231,7 +231,7 @@ main .screen__splash {
     background: url("../images/top-screen-bg.jpg") no-repeat center;
     background-size: cover;
     padding: 147px 0 0 0;
-    height: calc(100vh - 147px);
+    height: 100vh;
     min-height: 700px;
     max-height: 900px;
     z-index: 5;
