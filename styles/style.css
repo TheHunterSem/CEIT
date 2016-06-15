@@ -1,6 +1,8 @@
 body {
 	margin: 0;
 	padding: 0;
+	font-size: 14px;
+	font-family: 'Raleway', sans-serif;
 }
 
 @font-face {
@@ -20,7 +22,7 @@ body {
     src: url('../fonts/rockwell-regular.eot');
     src: url('../fonts/rockwell-regular.eot?#iefix') format('embedded-opentype'),
          url('../fonts/rockwell-regular.woff') format('woff'),
-         url('../fonts/rockwell-regular.ttf') format('truetype'),
+         url('../fonts/rockwell-regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -76,9 +78,9 @@ body {
 .container {
 	width: 1170px;
 	margin: 0 auto;
-	padding: 0 50px;
 }
 
+.clearfix::after,
 .container::after {
     content: '';
     
@@ -93,24 +95,21 @@ header {
 	background-color: #fff;
 }
 
-header .logo {
+header .logo{
 	float: left;
-}
-
-header .logo-link {
 	position: relative;
 	display: inline-block;
 	line-height: 30px;
-	padding: 60px 0 57px 44px;
+	margin: 60px 100px 57px 0;
+	padding: 0 0 0 44px;
 	font-family: 'Rockwell', serif;
-	margin: 0 100px 0 0;
 	text-decoration: none;
 	text-align: center;
 	font-size: 30px;
 	color: #202242;
 }
 
-header .logo-link::before {
+header .logo::before {
 	position: absolute;
 	content: '';
 	top: calc(50% - 16px);
@@ -120,21 +119,21 @@ header .logo-link::before {
 	background: url('../images/logo.png');
 }
 
-header .logo-link span {
+header .logo span {
 	font-weight: bold;
 }
 
-header .logo-link:hover {
+header .logo:hover {
 	color: #FFD23E;
 	transition: 0.3s;
 }
 
-header .logo-link:hover span {
+header .logo:hover span {
 	color: #FFD717;
 	transition: 0.5s;
 }
 
-header .logo-link:hover span{
+header .logo:hover span{
 	border-bottom: 2px solid #FFD717;
 	border-radius: 10px;
 	transition: 0.5s;
@@ -177,26 +176,28 @@ header .nav a:hover {
 
 header .right-info {
 	float: right;
-	padding: 31px 0 37px 45px;
+	padding: 40px 0 30px 44px;
 	border-left: 1px solid #ebebeb;
 }
 
+
 header .right-question p {
-	padding: 0 0 25px 0;
 	margin: 0;
 	font-size: 12px;
-	line-height: 30px;
+	line-height: 12px;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 600;
 	color: #202242;
 }
 
-header .live-chat {
-	float: left;
+header .feed-back {
+	padding: 25px 0 0 0;
 }
 
-header .live-chat a {
-	padding: 14px 22px 10px 22px;
+header .feed-back a {
+	display: inline-block;
+	float: left;
+	padding: 8px 29px;
 	text-decoration: none;
 	font-size: 14px;
 	line-height: 24px;
@@ -206,19 +207,17 @@ header .live-chat a {
 	font-weight: 600;
 }
 
-header .live-chat a:hover {
-	background-color: #fff;
-	border: 1px solid #000;
-	padding: 14px 22px 10px 21px;
-	transition: 0.3s;
+header .feed-back a:hover {
+	background-color: #202242;
+	color: #fff;
+	transition: 0.4s;
 }
 
-header .number {
+.feed-back span {
+	display: inline-block;
 	float: right;
-}
-
-.number span {
-	padding: 0 0 0 27px;
+	margin: 4px 0 0 0;
+	padding: 5px 0 5px 17px;
 	font-size: 24px;
 	line-height: 24px;
 	color: #202242;
@@ -227,12 +226,67 @@ header .number {
 	border-left: 1px solid #babbc4;
 }
 
-.screen__splash {
-	height: calc(100vh - 147px);
-	min-height: 500px;
-	max-height: 900px;
-	width: 100%;
+main .screen__splash {
+	position: relative;
     background: url("../images/top-screen-bg.jpg") no-repeat center;
     background-size: cover;
-    position: relative;
+    padding: 147px 0 0 0;
+    height: calc(100vh - 147px);
+    min-height: 500px;
+    max-height: 900px;
+    z-index: 5;
+}
+
+main .screen__splash .container {
+	width: 1170px;
+	margin: 0 auto;
+	padding: 0 50px;
+	position: relative;
+	z-index: 4;
+}
+
+main .row {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	z-index: 3;
+}
+
+main .darken {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: rgba(47, 47, 47, .33);
+	z-index: 1;
+}
+
+main .main-screen-content h1 {
+	padding: 0;
+	margin: 0;
+	line-height: 30px;
+	color: #fff;
+	font-size: 48px;
+	font-family: 'Rockwell', serif;
+	font-weight: normal;
+}
+
+main .main-screen-content p {
+	padding: 0;
+	margin: 45px 0 0 0;
+	line-height: 30px;
+	color: #fff;
+	font-size: 30px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: normal;
+}
+
+main .main-screen-content .main-screen-shape {
+	display: inline-block;
+	margin: 60px 0 0 0;
+	width: 102px;
+	height: 110px;
+	background: url('../images/main-screen-shape.png')no-repeat center;
 }
