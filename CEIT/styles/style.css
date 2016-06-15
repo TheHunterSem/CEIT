@@ -299,8 +299,19 @@ main .main-screen-content .main-screen-shape {
 .form-domain input[type=search] {
 	display: block;
 	float: left;
-	line-height: 30px;
-	padding: 12px 0 12px 22px;
-	margin: 15px 0 0 15px;
+	width: 275px;
+	padding: 18px 0 18px 23px;
+	margin: 16px 0 0 15px;
 	outline: none;
+	border: none;
+	color: #2d2d2d;
+	font-size: 18px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.form-domain input[placeholder] {
+	color: #2d2d2d;
+	font-size: 18px;
+	line-height: 18px;
+	font-family: 'Raleway', sans-serif;
 }
