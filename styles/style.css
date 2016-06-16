@@ -299,12 +299,13 @@ main .main-screen-content .main-screen-shape {
 	display: block;
 	float: left;
 	width: 275px;
-	padding: 18px 0 18px 23px;
+	padding: 17px 0 18px 23px;
 	margin: 17px 0 0 15px;
 	outline: none;
 	border: none;
 	color: #2d2d2d;
 	font-size: 18px;
+	line-height: 18px;
 	font-family: 'Raleway', sans-serif;
 }
 
@@ -315,18 +316,45 @@ main .main-screen-content .main-screen-shape {
 	font-family: 'Raleway', sans-serif;
 }
 
-.input-select {
+.styled-select {
 	float: left;
-	height: 57px;
+	position: relative;
 	margin: 17px 0 0 0;
-	padding: 0 22px 0 22px;
-	text-align: center;
-	font-size: 18px;
+}
+
+.styled-select::after {
+	content: '';
+	border: 8px solid transparent;
+	border-top: 8px solid #2d2d2d;
+	position: absolute;
+	right: 19px;
+	top: 25px;
+}
+
+.input-select {
+	height: 56px;
+	padding: 0 43px 0 22px;
+	text-align: right;
+	font-size: 17px;
+	line-height: 17px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold; 
 	background-color: #ffe13e;
 	border: none;
 	color: #2d2d2d;
 	outline: none;
+	-webkit-appearance: none;
+   	-moz-appearance: none;
+   	appearance: none;
 }
+
+.input-select option {
+	font-size: 18px;
+	font-weight: bold; 
+	background: #202242;
+    color:#fff;
+}
+
 
 .btn {
 	display: block;
@@ -345,11 +373,13 @@ main .main-screen-content .main-screen-shape {
 }
 
 .btn-domain {
+	width: 158px;
 	color: #fff;
     font-size: 14px;
-    width: 160px;
-    line-height: 53px;
+    line-height: 14px;
+    padding: 20px 0;
     outline: none;
     border-left: 1px solid #fff;
+    cursor: pointer;
 }
 
