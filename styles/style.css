@@ -141,19 +141,19 @@ header .logo:hover span{
 
 header .nav {
 	float: left;
-	margin: 0;
-	padding: 65px 0 52px 0;
+	padding: 0;
+	margin: 65px 0 52px 0;
 	line-height: 30px;
 }
 
 header .nav li {
 	display: inline-block;
-	padding: 0 34px 0 0;
+	margin: 0 34px 0 0;
 	list-style: none;
 }
 
 header .nav li:last-child {
-	padding: 0;
+	margin: 0;
 }
 
 header .nav a {
@@ -191,7 +191,7 @@ header .right-question p {
 }
 
 header .feed-back {
-	padding: 25px 0 0 0;
+	margin: 25px 0 0 0;
 }
 
 header .feed-back a {
@@ -226,28 +226,27 @@ header .feed-back a:hover {
 	border-left: 1px solid #babbc4;
 }
 
-main .screen__splash {
+.screen__splash {
 	position: relative;
+	width: 100%;
     background: url("../images/top-screen-bg.jpg") no-repeat center;
     background-size: cover;
     padding: 147px 0 0 0;
-    height: 100vh;
-    min-height: 700px;
-    max-height: 900px;
     z-index: 5;
 }
 
-main .screen__splash .container {
-	position: relative;
-	z-index: 4;
+.screen__splash .container {
+	height: 100vh;
+    min-height: 700px;
+    max-height: 900px;
 }
 
-main .row {
-	position: absolute;
+.main-screen-content {
+	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
 	text-align: center;
-	z-index: 3;
+	z-index: 4;
 }
 
 main .darken {
@@ -263,9 +262,9 @@ main .darken {
 main .main-screen-content h1 {
 	padding: 0;
 	margin: 0;
-	line-height: 30px;
-	color: #fff;
 	font-size: 48px;
+	line-height: 48px;
+	color: #fff;
 	font-family: 'Rockwell', serif;
 	font-weight: normal;
 }
@@ -325,7 +324,6 @@ main .main-screen-content .main-screen-shape {
 	font-size: 18px;
 	background-color: #ffe13e;
 	border: none;
-        border-radius: none;
 	color: #2d2d2d;
 	outline: none;
 }
