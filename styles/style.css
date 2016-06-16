@@ -288,11 +288,10 @@ main .main-screen-content .main-screen-shape {
 }
 
 .form-domain {
-	width: 572px;
-	height: 90px;
-	margin-left: 50%;
-	transform: translateX(-50%);
-	background: url('../images/form-bg.png')no-repeat center;
+width: 572px;
+height: 90px;
+background: url('../images/form-bg.png')no-repeat center;
+margin: 0 auto;
 }
 
 .form-domain input[type=search] {
@@ -341,6 +340,7 @@ main .main-screen-content .main-screen-shape {
 	font-weight: bold; 
 	background-color: #ffe13e;
 	border: none;
+	border-radius: 0;
 	color: #2d2d2d;
 	outline: none;
 	-webkit-appearance: none;
@@ -374,10 +374,10 @@ main .main-screen-content .main-screen-shape {
 
 .btn-domain {
 	width: 158px;
+	height: 56px;
 	color: #fff;
     font-size: 14px;
     line-height: 14px;
-    padding: 20px 0;
     outline: none;
     border-left: 1px solid #fff;
     cursor: pointer;
