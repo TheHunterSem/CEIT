@@ -398,6 +398,8 @@ header .feed-back a:hover {
 	position: relative;
     margin: 0;
     padding: 0;
+    min-height: 652px;
+    max-height: 780px;
 }
 
 .screen__services .container {
@@ -536,11 +538,12 @@ header .feed-back a:hover {
 }
 
 .features-header {
-	padding: 0;
-	margin: 96px 0 0 0;
+	padding: 96px 0 0 0;
 	font-size: 48px;
 	line-height: 48px;
 	color: #202242;
 	font-weight: bold;
 	text-align: center;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
 }
