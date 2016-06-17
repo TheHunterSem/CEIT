@@ -530,3 +530,17 @@ header .feed-back a:hover {
 	color: #202242;
 	transition: 0.3s;
 }
+
+.screen__features {
+	background: #fbf8f1 url('../images/screen-features-bg.png') no-repeat center;
+}
+
+.features-header {
+	padding: 0;
+	margin: 96px 0 0 0;
+	font-size: 48px;
+	line-height: 48px;
+	color: #202242;
+	font-weight: bold;
+	text-align: center;
+}
