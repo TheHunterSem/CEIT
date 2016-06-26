@@ -22,7 +22,7 @@ body {
     src: url('../fonts/rockwell-regular.eot');
     src: url('../fonts/rockwell-regular.eot?#iefix') format('embedded-opentype'),
          url('../fonts/rockwell-regular.woff') format('woff'),
-         url('../fonts/rockwell-regular.ttf') format('truetype'),
+         url('../fonts/rockwell-regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -75,7 +75,7 @@ body {
     font-style: normal;
 }
 
-.container {
+/*.container {
 	width: 1170px;
 	margin: 0 auto;
 }
@@ -86,7 +86,7 @@ body {
     
     display: table;
     clear: both;
-}
+}*/
 
 header {
 	position: fixed;
@@ -100,7 +100,7 @@ header .logo{
 	position: relative;
 	display: inline-block;
 	line-height: 30px;
-	margin: 60px 100px 57px 0;
+	margin: 59px 100px 57px 0;
 	padding: 0 0 0 44px;
 	font-family: 'Rockwell', serif;
 	text-decoration: none;
@@ -236,8 +236,9 @@ header .feed-back a:hover {
 }
 
 .screen__splash .container {
-	height: 100vh;
-    min-height: 700px;
+	position: relative;
+	height: calc(100vh - 147px);
+    min-height: 600px;
     max-height: 900px;
 }
 
@@ -288,9 +289,9 @@ header .feed-back a:hover {
 }
 
 .form-domain {
-	width: 572px;
+	border: 17px solid #ddd;
+	width: 595px;
 	height: 90px;
-	background: url('../images/form-bg.png')no-repeat center;
 	margin: 0 auto;
 }
 
@@ -299,7 +300,6 @@ header .feed-back a:hover {
 	float: left;
 	width: 275px;
 	padding: 17px 0 18px 23px;
-	margin: 17px 0 17px 15px;
 	outline: none;
 	border: none;
 	color: #2d2d2d;
@@ -318,7 +318,6 @@ header .feed-back a:hover {
 .styled-select {
 	float: left;
 	position: relative;
-	margin: 17px 0 0 0;
 }
 
 .styled-select::after {
@@ -364,7 +363,6 @@ header .feed-back a:hover {
 	display: block;
     float: left;
     font-size: 14px;
-    margin: 17px 0 0 0;
     font-family: "Raleway", sans-serif;
     color: #202242;
     font-weight: bold;
@@ -377,6 +375,7 @@ header .feed-back a:hover {
 }
 
 .btn-domain {
+	float: left;
 	width: 158px;
 	height: 56px;
 	color: #202242;
@@ -397,14 +396,12 @@ header .feed-back a:hover {
 .screen__services {
 	position: relative;
     margin: 0;
-    padding: 0;
+    padding: 115px 0 0 0;
     min-height: 652px;
     max-height: 780px;
 }
 
 .screen__services .container {
-    width: 1170px;
-    padding: 0;
     margin: 0 auto;
     position: relative;
     z-index: 6;
@@ -428,16 +425,10 @@ header .feed-back a:hover {
     background: #ffe13e;
 }
 
-.webhost-services {
-	position: relative;
-    float: left;
-    width: 50%;
-    text-align: center;
-}
-
+.webhost-services,
 .domain-services {
 	position: relative;
-    float: right;
+    float: left;
     width: 50%;
     text-align: center;
 }
@@ -447,11 +438,11 @@ header .feed-back a:hover {
 	background: url(../images/webhost-services-shape.png) no-repeat center;
 	width: 168px;
 	height: 169px;
-	margin: 115px auto 29px auto;
+	margin: 0 auto 29px auto;
 }
 
 .webhost-services-header {
-	margin: 29px auto 15px auto;
+	margin: 0 auto 15px auto;
 	padding: 0;
 	color: #fff;
 	font-size: 36px;
@@ -470,7 +461,7 @@ header .feed-back a:hover {
 
 .webhost-services-link {
 	display: inline-block;
-	margin: 19px auto 104px auto;
+	margin: 19px auto 0 auto;
 	padding: 19px 53px 19px 53px;
 	color: #fff;
 	font-size: 18px;
@@ -482,14 +473,16 @@ header .feed-back a:hover {
 }
 
 .webhost-services-link:hover {
+	text-decoration: none;
 	border: 3px solid #ffe13e;
-	color: #ffe13e;
+	background-color: #ffe13e;
+	color: #202242;
 	transition: 0.3s;
 }
 
 .domain-services-com {
 	display: block;
-	margin: 141px auto 43px auto;
+	margin: 26px auto 43px auto;
 	font-size: 134px;
 	line-height: 134px;
 	color: #202242;
@@ -516,7 +509,7 @@ header .feed-back a:hover {
 
 .domain-services-link {
 	display: inline-block;
-	margin: 19px auto 104px auto;
+	margin: 19px auto 0 auto;
 	padding: 19px 53px 19px 53px;
 	color: #fff;
 	font-size: 18px;
@@ -528,18 +521,20 @@ header .feed-back a:hover {
 }
 
 .domain-services-link:hover {
+	text-decoration: none;
+	background-color: #202242;
 	border: 3px solid #202242;
-	color: #202242;
+	color: #ffe13e;
 	transition: 0.3s;
 }
 
 .screen__features {
+	padding: 96px 0 140px 0;
 	background-size: cover;
 	background: #fbf8f1 url('../images/screen-features-bg.png') no-repeat center;
 }
 
 .features-header {
-	padding: 96px 0 0 0;
 	font-size: 48px;
 	line-height: 48px;
 	color: #202242;
@@ -560,20 +555,12 @@ header .feed-back a:hover {
 .features-items {
 	position: relative;
 	float: left;
-	margin: 85px 0 140px 0;
+	margin: 85px 0 0 0;
 }
 
 .features-item {
 	float: left;
-	margin: 0 28px 0 28px;
-}
-
-.features-item:first-child {
-	margin: 0 28px 0 20px;
-}
-
-.features-item:last-child {
-	margin: 0 20px 0 28px;
+	margin: 0 22px 0 22px;
 }
 
 .features-img {
@@ -598,7 +585,8 @@ header .feed-back a:hover {
 	position: absolute;
 	content: '';
 	bottom: 59px;
-	left: 88px;
+	left: 50%;
+	transform: translateX(-50%);
 	height: 3px;
 	width: 69px;
 	background-color: #8d8d99;
