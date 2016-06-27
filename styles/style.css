@@ -398,18 +398,18 @@ header .feed-back a:hover {
     margin: 0;
     padding: 115px 0 0 0;
     min-height: 652px;
-    max-height: 780px;
+    max-height: 700px;
 }
 
 .screen__services .container {
     margin: 0 auto;
-    position: relative;
     z-index: 6;
 }
 
 .side-bg {
 	position: absolute;
     z-index: 1;
+    margin: 0 auto;
     height: 100%;
     top: 0;
     width: 50%;
@@ -428,9 +428,9 @@ header .feed-back a:hover {
 .webhost-services,
 .domain-services {
 	position: relative;
-    float: left;
-    width: 50%;
+    width: 100%;
     text-align: center;
+    z-index: 5;
 }
 
 .webhost-services-shape {
@@ -457,6 +457,7 @@ header .feed-back a:hover {
 	width: 417px;
 	color: #fff;
 	font-weight: normal;
+	text-align: center;
 }
 
 .webhost-services-link {
