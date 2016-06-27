@@ -532,7 +532,7 @@ header .feed-back a:hover {
 .screen__features {
 	padding: 96px 0 125px 0;
 	background-size: cover;
-	background: #fbf8f1 url('../images/screen-features-bg.png') no-repeat center;
+	background: #fbf8f1 url('../images/screen-features-bg.png') no-repeat center fixed;
 }
 
 .features-header {
@@ -603,4 +603,38 @@ header .feed-back a:hover {
 	color: #202242;
 }
 
+.screen__clients {
+	padding: 87px 0 111px 0;
+}
 
+.clients-header {
+	padding: 0;
+	margin: 0;
+	font-size: 36px;
+	line-height: 36px;
+	color: #202242;
+	font-family: 'Raleway';
+	font-weight: bold;
+}
+
+.clients-paragraph {
+	font-size: 16px;
+	line-height: 24px;
+	color: #adadad;
+	font-family: 'Raleway';
+	font-weight: normal;
+	padding: 4px 0 0 0;
+}
+
+.clients-logos {
+	display: inline-block;
+	float: left;
+
+}
+
+.clients-logos:hover {
+	box-shadow: 0 10px 20px rgba(41,52,73,0.5);
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+}
