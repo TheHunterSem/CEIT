@@ -75,19 +75,6 @@ body {
     font-style: normal;
 }
 
-/*.container {
-	width: 1170px;
-	margin: 0 auto;
-}
-
-.clearfix::after,
-.container::after {
-    content: '';
-    
-    display: table;
-    clear: both;
-}*/
-
 header {
 	position: fixed;
 	z-index: 999;
@@ -157,6 +144,7 @@ header .nav li:last-child {
 }
 
 header .nav a {
+	padding: 0;
 	font-size: 16px;
 	text-decoration: none;
 	font-family: 'Raleway', sans-serif;
@@ -172,6 +160,7 @@ header .nav .nav-active {
 header .nav a:hover {
 	color: #ffe13e;
 	transition: 0.3s;
+	background: none;
 }
 
 header .right-info {

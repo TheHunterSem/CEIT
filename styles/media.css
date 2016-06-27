@@ -1,0 +1,6 @@
+/* md devices (992px) */
+@media (min-width: 993px) and (max-width: 1199px) { 
+.nav{display:inline-block; float: right;}
+.right-info{display: none;}
+}
+
