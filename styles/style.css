@@ -530,7 +530,7 @@ header .feed-back a:hover {
 }
 
 .screen__features {
-	padding: 96px 0 140px 0;
+	padding: 96px 0 125px 0;
 	background-size: cover;
 	background: #fbf8f1 url('../images/screen-features-bg.png') no-repeat center;
 }
