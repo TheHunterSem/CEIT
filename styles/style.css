@@ -239,7 +239,7 @@ header .feed-back a:hover {
 	position: relative;
 	height: calc(100vh - 147px);
     min-height: 600px;
-    max-height: 900px;
+    max-height: 940px;
 }
 
 .main-screen-content {
