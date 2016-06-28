@@ -106,7 +106,7 @@ header .logo::before {
 	background: url('../images/logo.png');
 }
 
-header .logo span {
+header .logo .logo-span {
 	font-weight: bold;
 }
 
@@ -115,12 +115,12 @@ header .logo:hover {
 	transition: 0.3s;
 }
 
-header .logo:hover span {
+header .logo:hover .logo-span {
 	color: #FFD717;
 	transition: 0.5s;
 }
 
-header .logo:hover span{
+header .logo:hover .logo-span{
 	border-bottom: 2px solid #FFD717;
 	border-radius: 10px;
 	transition: 0.5s;
@@ -170,7 +170,7 @@ header .right-info {
 }
 
 
-header .right-question p {
+header .right-question .right-info-question {
 	margin: 0;
 	font-size: 12px;
 	line-height: 12px;
@@ -183,7 +183,7 @@ header .feed-back {
 	margin: 25px 0 0 0;
 }
 
-header .feed-back a {
+header .feed-back .feed-back-btn {
 	display: inline-block;
 	float: left;
 	padding: 8px 29px;
@@ -196,13 +196,13 @@ header .feed-back a {
 	font-weight: 600;
 }
 
-header .feed-back a:hover {
+header .feed-back .feed-back-btn:hover {
 	background-color: #202242;
 	color: #fff;
 	transition: 0.4s;
 }
 
-.feed-back span {
+.feed-back .feed-back-number {
 	display: inline-block;
 	float: right;
 	margin: 4px 0 0 0;
@@ -231,7 +231,7 @@ header .feed-back a:hover {
     max-height: 940px;
 }
 
-.main-screen-content {
+.screen__splash .row {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
@@ -249,7 +249,7 @@ header .feed-back a:hover {
 	z-index: 1;
 }
 
-.main-screen-content h1 {
+.screen__splash .row .screen-splash-header {
 	padding: 0;
 	margin: 0;
 	font-size: 48px;
@@ -259,7 +259,7 @@ header .feed-back a:hover {
 	font-weight: normal;
 }
 
-.main-screen-content p {
+.screen__splash .row .screen-splash-paragraph {
 	padding: 0;
 	margin: 45px 0 0 0;
 	line-height: 30px;
@@ -269,7 +269,7 @@ header .feed-back a:hover {
 	font-weight: normal;
 }
 
-.main-screen-content .main-screen-shape {
+.screen__splash .row .main-screen-shape {
 	display: inline-block;
 	margin: 60px 0;
 	width: 102px;
@@ -278,8 +278,8 @@ header .feed-back a:hover {
 }
 
 .form-domain {
-	border: 17px solid #ddd;
-	width: 595px;
+	border: 17px solid rgba(255, 255, 255, .5);
+	width: 572px;
 	height: 90px;
 	margin: 0 auto;
 }
@@ -307,37 +307,41 @@ header .feed-back a:hover {
 .styled-select {
 	float: left;
 	position: relative;
-}
-
-.styled-select::after {
-	content: '';
-	position: absolute;
-	top: 20px;
-	right: 19px;
-	height: 10px;
-  	width: 10px;
-  	border-right: 2px solid #fff;
-  	border-bottom: 2px solid #fff;
-  	transform:rotate(45deg);
+    background: #ffe13e;
 }
 
 .input-select {
-	height: 56px;
-	padding: 0 43px 0 22px;
-	text-align: right;
-	font-size: 17px;
-	line-height: 17px;
-	font-family: 'Raleway', sans-serif;
-	font-weight: bold; 
-	background-color: #ffe13e;
-	border: none;
-	border-radius: 0;
-	color: #2d2d2d;
-	outline: none;
-	-webkit-appearance: none;
-   	-moz-appearance: none;
-   	appearance: none;
-   	cursor: pointer;
+	position: relative;
+    height: 56px;
+    padding: 0 43px 0 22px;
+    text-align: right;
+    font-size: 17px;
+    line-height: 17px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    color: #2d2d2d;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.styled-select::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 19px;
+    height: 10px;
+    width: 10px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(45deg);
+    z-index: 1;
 }
 
 .input-select option {
@@ -371,6 +375,7 @@ header .feed-back a:hover {
     font-size: 14px;
     line-height: 14px;
     outline: none;
+    border-radius: 0;
     border-left: 1px solid #fff;
     cursor: pointer;
 }
@@ -542,15 +547,10 @@ header .feed-back a:hover {
 	color: #202242;
 }
 
-.features-items {
+.screen__features .row {
 	position: relative;
 	float: left;
 	margin: 85px 0 0 0;
-}
-
-.features-item {
-	float: left;
-	margin: 0 22px 0 22px;
 }
 
 .features-img {
@@ -585,7 +585,6 @@ header .feed-back a:hover {
 .features-item p {
 	padding: 0;
 	margin: 0;
-	width: 240px;
 	text-align: center;
 	font-size: 14px;
 	line-height: 25px;

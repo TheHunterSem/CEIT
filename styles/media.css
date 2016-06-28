@@ -1,6 +1,11 @@
 /* md devices (992px) */
 @media (min-width: 993px) and (max-width: 1199px) { 
-.nav{display:inline-block; float: right;}
+header .logo{margin: 59px 50px 57px 105px;}	
 .right-info{display: none;}
 }
 
+/* sm Medium devices (992px) */
+@media (min-width: 767px) and (max-width: 992px){ 
+header .logo{margin: 59px 25px 57px 0;}
+.right-info{display: none;}
+}
