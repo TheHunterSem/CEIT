@@ -692,21 +692,23 @@ header .feed-back .feed-back-btn:hover {
 }
 
 .testimonial-paragraph {
+	padding: 0;
 	font-size: 14px;
 	line-height: 24px;
 	font-family: 'Rockwell', serif;
 	font-style: italic;
 	color: #a4a4a4;
-	/*background-color: #faf9f9;*/
 	text-align: center;
 }
 
 .testimonial-group-info {
     background: #faf9f9;
     position: relative;
+    padding: 30px 0 25px 0;
 }
 
 .testimonial-title-name {
+	padding: 0;
 	font-size: 16px;
 	line-height: 24px;
 	color: #696969;
@@ -719,7 +721,7 @@ header .feed-back .feed-back-btn:hover {
 	height: 100px;
 	width: 100px;
 	border-radius: 100%;
-	top: 110px;
+	top: 140px;
 	right: 45px;
 }
 
