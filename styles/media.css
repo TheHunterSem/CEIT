@@ -5,7 +5,7 @@ header .logo{margin: 59px 30px 57px 0;}
 .clients-header{font-size: 30px; line-height: 30px;}
 .clients-paragraph{font-size: 13px; line-height: 18px;}
 .clients-logos img{height: 105px; width: 160px;}
-
+.right-info-md{display: block;}
 }
 
 /* sm Medium devices (992px) */
