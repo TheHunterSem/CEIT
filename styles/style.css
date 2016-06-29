@@ -233,7 +233,7 @@ header .feed-back .feed-back-btn:hover {
 }
 
 .feed-back-btn-md:hover {
-	box-shadow: 0 10px 20px rgba(41,52,73,0.5);
+	box-shadow: 0 5px 10px rgba(41,52,73,0.5);
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     transition: 0.3s;
@@ -265,6 +265,47 @@ header .feed-back .feed-back-btn:hover {
 	bottom: 30px;
 	left: 50%;
 	transform: translateX(-50%);
+}
+
+.navigation-xs {display: none; text-align: center;}
+
+.nav-xs {
+	margin: 0;
+	padding: 0;
+	background: #fff;
+}
+
+.nav-xs li {
+	list-style: none;
+	text-align: center;
+	padding: 5px 0;
+}
+
+.nav-xs a {
+	color: #202242; 
+	font-family: 'Raleway', sans-serif;
+}
+
+.nav-xs a:hover {
+	text-decoration: none;
+	color: #202242;
+}
+
+.navigation-xs-touch {
+	position: relative;
+	display: block;
+	font-size: 18px;
+	line-height: 18px;
+	padding: 10px 0;
+	color: #202242;
+	font-weight: bold;
+	font-family: 'Raleway', sans-serif;
+	text-decoration: none;
+}
+
+.navigation-xs-touch:hover {
+	text-decoration: none;
+	color: #202242;
 }
 
 .screen__splash {
@@ -602,6 +643,10 @@ header .feed-back .feed-back-btn:hover {
 .screen__features .row {
 	position: relative;
 	float: left;
+	
+}
+
+.features-item {
 	margin: 85px 0 0 0;
 }
 
@@ -688,23 +733,28 @@ header .feed-back .feed-back-btn:hover {
 }
 
 .testimonial-paragraph {
+	padding: 0;
 	font-size: 14px;
 	line-height: 24px;
 	font-family: 'Rockwell', serif;
 	font-style: italic;
 	color: #a4a4a4;
+	text-align: center;
 }
 
 .testimonial-group-info {
-	background-color: #faf9f9;
-	position: relative;
+    background: #faf9f9;
+    position: relative;
+    padding: 30px 0 25px 0;
 }
 
 .testimonial-title-name {
+	padding: 0;
 	font-size: 16px;
 	line-height: 24px;
 	color: #696969;
 	font-weight: bold;
+	font-style: normal;
 }
 
 .testimonial-title-photo {
@@ -712,7 +762,7 @@ header .feed-back .feed-back-btn:hover {
 	height: 100px;
 	width: 100px;
 	border-radius: 100%;
-	top: 110px;
+	top: 140px;
 	right: 45px;
 }
 
