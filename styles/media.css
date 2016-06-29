@@ -31,4 +31,9 @@ header .logo, header .nav, .right-info{display: none;}
 header{background: #fff;}
 .navigation-xs{display: block;}
 .nav-xs{display: none;}
+.screen__splash .row .screen-splash-header{font-size: 35px; line-height: 35px;}
+.screen__splash .row .screen-splash-paragraph{font-size: 25px; line-height: 25px;}
+.screen__splash .row .main-screen-shape{width: 72px; height: 80px;}
+.form-domain{width: 297px; height: auto;}
+.form-domain input[type=search]{width: 263px;}
 }
