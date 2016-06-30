@@ -2,45 +2,172 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<title>Вася Кирилюк</title>
-	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/bootstrap.min.css">
 	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="styles/media.css">
 </head>
 <body>
 	<header>
 		<div class="container">
-			<div class="logo">
-				<a href="#" class="logo-link">Maguwo<span>Host</span></a>
-			</div>
-			<ul class="nav">
-				<li><a href="#" class="nav-active">home</a></li>
-				<li><a href="#">about</a></li>
-				<li><a href="#">pricing</a></li>
-				<li><a href="#">domain</a></li>
-				<li><a href="#">hosting</a></li>
-			</ul>
-			<div class="right-info">
-				<div class="right-question">
-					<p>Do you need help ? Just Email, Live chat or Call us</p>
-				</div>
-				<div class="live-chat">
-					<a href="#">Live Chat</a>
-				</div>
-				<div class="number">
-					<span>6284-6534</span>
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<a href="#" class="logo">Maguwo<span class="logo-span">Host</span></a>
+					<ul class="nav">
+						<li><a href="#" class="nav-active">home</a></li>
+						<li><a href="#">about</a></li>
+						<li><a href="#">pricing</a></li>
+						<li><a href="#">domain</a></li>
+						<li><a href="#">hosting</a></li>
+					</ul>
+					<div class="right-info">
+						<div class="right-question">
+							<p class="right-info-question">Do you need help ? Just Email, Live chat or Call us</p>
+						</div>
+						<div class="feed-back clearfix">
+							<a href="#" class="feed-back-btn">Live Chat</a>
+							<span class="feed-back-number">6284-6534</span>
+						</div>
+					</div>
+					<div class="right-info-md clearfix">
+						<a href="#" class="feed-back-btn-md"><img src="images/live-support.png" alt="live-support"></a>
+						<span class="feed-back-number-md">6284-6534</span>
+					</div>
 				</div>
 			</div>
 		</div>
 	</header>
 
-	<main>
-	<!-- діч з екраном -->
-		<div class="screen__splash"> 
-			<div class="container">
-				
+	<div class="screen__splash"> 
+		<div class="container">
+			<div class="row">
+				<h1 class="screen-splash-header">Just a Proffesional Web Hosting Services</h1>
+				<p class="screen-splash-paragraph">modern  -  fast  -  reliable</p>
+				<span class="main-screen-shape"></span>
+				<div class="form-domain">
+					<form action="#" class="clearfix">
+						<input type="search" placeholder="Your Domain Name ...">
+						<div class="styled-select">
+							<select class="input-select">
+								<option>.com</option>
+								<option>.net</option>
+								<option>.tv</option>
+							</select>
+						</div>
+						<input type="submit" class="btn btn-domain" value="Check Availability">
+					</form>
+				</div>
 			</div>
 		</div>
-	</main>
+		<div class="darken"></div>
+	</div>
 	
+	<div class="screen__services">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<div class="webhost-services">
+						<span class="webhost-services-shape"><img src="images/webhost-services-shape.png" alt="webhost-services-shape"></span>
+						<h2 class="webhost-services-header">#1 Webhost Services</h2>
+						<p class="webhost-services-paragraph">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+						<a href="#" class="webhost-services-link">More</a>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<div class="domain-services">
+						<span class="domain-services-com">.com</span>
+						<h2 class="domain-services-header">#1 Domain Services</h2>
+						<p class="domain-services-paragraph">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+						<a href="#" class="domain-services-link">More</a>
+					</div>
+				</div>
+			</div>
+			<div class="side-bg side-bg-left"></div>
+			<div class="side-bg side-bg-right"></div>
+		</div>
+	</div>
+
+	<div class="screen__features">
+		<div class="container">
+			<h3 class="features-header">Our Features</h3>
+			<p class="features-paragraph">Our Best Features</p>
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="features-item">
+						<div class="features-img"><img src="images/live-support.png" alt="live-support"></div>
+						<h3>Live Support</h3>
+						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. </p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6">		
+					<div class="features-item">
+						<div class="features-img"><img src="images/cloud-technology.png" alt="cloud-technology"></div>
+						<h3>Cloud Technology</h3>
+						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. </p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="features-item">
+						<div class="features-img"><img src="images/hi-tech-database.png" alt="hi-tech-database"></div>
+						<h3>Hi Tech Database</h3>
+						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. </p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-6">
+					<div class="features-item">
+						<div class="features-img"><img src="images/live-monitoring.png" alt="live-monitoring"></div>
+						<h3>Live Monitoring</h3>
+						<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="screen__clients">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-3 col-sm-12">
+					<h2 class="clients-header">Our Clients</h2>
+					<p class="clients-paragraph">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum.</p>
+				</div>
+				<div class="col-lg-8 col-md-9 col-sm-12">
+					<div class="col-xs-3 col-sm-3 col-md-3"><a href="#" class="clients-logos"><img src="images/tree-logo.png" alt="tree-logo"></a></div>
+					<div class="col-xs-3 col-sm-3 col-md-3"><a href="#" class="clients-logos"><img src="images/x-logo.png" alt="x-logo"></a></div>
+					<div class="col-xs-3 col-sm-3 col-md-3"><a href="#" class="clients-logos"><img src="images/u-logo.png" alt="u-logo"></a></div>
+					<div class="col-xs-3 col-sm-3 col-md-3"><a href="#" class="clients-logos"><img src="images/fish-logo.png" alt="fish-logo"></a></div>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<div class="testimonial-group">
+						<div class="col-lg-4 col-md-4 col-sm-4">
+							<div class="testimonial-group-info">
+								<p class="testimonial-paragraph">“ This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. ”</p>
+								<p class="testimonial-title-name">-Anna</p>
+								<div class="testimonial-title-photo"><img src="images/testimonial-title-photo.png" alt="title-photo"></div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4">
+							<div class="testimonial-group-info">
+								<p class="testimonial-paragraph">“ This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. ”</p>
+								<p class="testimonial-title-name">-Anna</p>
+								<div class="testimonial-title-photo"><img src="images/testimonial-title-photo.png" alt="title-photo"></div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-4">
+							<div class="testimonial-group-info">
+								<p class="testimonial-paragraph">“ This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. ”</p>
+								<p class="testimonial-title-name">-Anna</p>
+								<div class="testimonial-title-photo"><img src="images/testimonial-title-photo.png" alt="title-photo"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script src="js/jquery-3.0.0.min.js"></script>  
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
