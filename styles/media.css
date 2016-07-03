@@ -6,6 +6,7 @@ header .logo{margin: 59px 30px 57px 0;}
 .clients-paragraph{font-size: 13px; line-height: 18px;}
 .clients-logos img{height: 105px; width: 160px;}
 .right-info-md{display: block;}
+header .feed-back .feed-back-btn{display: block;}
 .testimonial-group {margin: 50px 0 0 0;}
 .testimonial-title-photo{top: 165px; right: 35px;}
 }
@@ -31,9 +32,20 @@ header .logo, header .nav, .right-info{display: none;}
 header{background: #fff;}
 .navigation-xs{display: block;}
 .nav-xs{display: none;}
+.form-domain{width: 297px; height: auto;}
+.form-domain input[type=search]{width: 263px;}
 .screen__splash .row .screen-splash-header{font-size: 35px; line-height: 35px;}
 .screen__splash .row .screen-splash-paragraph{font-size: 25px; line-height: 25px;}
 .screen__splash .row .main-screen-shape{width: 72px; height: 80px;}
-.form-domain{width: 297px; height: auto;}
-.form-domain input[type=search]{width: 263px;}
+.webhost-services-shape img{width: 118px; height: 119px;}
+.webhost-services-header {font-size: 23px; line-height: 23px;}
+.webhost-services-paragraph {font-size: 13px; line-height: 20px; width: 217px;}
+.domain-services-com {font-size: 82px; line-height: 82px;}
+.domain-services-header {font-size: 23px; line-height: 23px;}
+.domain-services-paragraph {font-size: 13px; line-height: 20px; width: 217px;}
+.testimonial-group {margin: 40px 0 0 0;}
+.testimonial-group-info {margin: 35px 0;}
+.testimonial-group:first-child {margin: 0;}
+.testimonial-group:last-child {margin: 0;}
+.testimonial-title-photo {top: 100px;}
 }

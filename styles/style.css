@@ -219,34 +219,34 @@ header .feed-back .feed-back-btn:hover {
 	display: none;
 	float: left;
 	margin-left: 50px;
-	width: 170px;
-	padding: 15px 0 14px 75px;
+	width: 187px;
+	padding: 30px 0 24px 58px;
 	border-left: 1px solid #ebebeb;
 }
 
 .feed-back-btn-md {
-	display: block;
+	display: inline-block;
 	float: left;
-	margin: 0 0 0 10px;
-	background: no-repeat center;
-	border-radius: 100%;
+	padding: 8px 30px;
+	text-decoration: none;
+	font-size: 13px;
+	line-height: 24px;
+	color: #202242;
+	background-color: #ffe13e;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 600;
 }
 
 .feed-back-btn-md:hover {
-	box-shadow: 0 5px 10px rgba(41,52,73,0.5);
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    transition: 0.3s;
-}
-
-.feed-back-btn-md img {
-	height: 70px;
-	width: 70px;
+	text-decoration: none;
+	background-color: #202242;
+	color: #fff;
+	transition: 0.4s;
 }
 
 .feed-back-number-md {
 	position: relative;
-	margin-top: 30px;
+	margin: 35px 0 0 15px;
 	display: block;
 	float: left;
 	font-size: 18px;
@@ -267,7 +267,44 @@ header .feed-back .feed-back-btn:hover {
 	transform: translateX(-50%);
 }
 
-.navigation-xs {display: none; text-align: center;}
+.navigation-xs {
+	display: none; 
+	position: relative;
+}
+
+.logo-xs {
+	display: inline-block;
+	line-height: 26px;
+	padding: 12px 0 12px 10px;
+	font-family: 'Rockwell', serif;
+	text-decoration: none;
+	text-align: center;
+	font-size: 26px;
+	color: #202242;
+}
+
+.logo-xs-span {
+	font-weight: bold;
+	color: #ffe13e;
+}
+
+.navigation-xs-touch {
+	position: absolute;
+	content: '';
+	width: 24px;
+	height: 24px;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 12px;
+	background: url('../images/navigation-xs-touch.png') no-repeat;
+} 
+
+
+
+.navigation-xs-touch:hover {
+	text-decoration: none;
+	color: #ffe13e;
+}
 
 .nav-xs {
 	margin: 0;
@@ -292,23 +329,6 @@ header .feed-back .feed-back-btn:hover {
 }
 
 .nav-xs a:active {
-	text-decoration: none;
-	color: #202242;
-}
-
-.navigation-xs-touch {
-	position: relative;
-	display: block;
-	font-size: 18px;
-	line-height: 18px;
-	padding: 10px 0;
-	color: #202242;
-	font-weight: bold;
-	font-family: 'Raleway', sans-serif;
-	text-decoration: none;
-}
-
-.navigation-xs-touch:hover {
 	text-decoration: none;
 	color: #202242;
 }
@@ -724,11 +744,12 @@ header .feed-back .feed-back-btn:hover {
 .clients-logos {
 	display: inline-block;
 	float: left;
+	margin: 0 5px;
 }
 
 .clients-logos img {
-	height: 115px;
-	width: 170px;
+	height: 95px;
+	width: 150px;
 }
 
 .clients-logos:hover {
