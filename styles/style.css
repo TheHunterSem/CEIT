@@ -275,7 +275,7 @@ header .feed-back .feed-back-btn:hover {
 .logo-xs {
 	display: inline-block;
 	line-height: 26px;
-	padding: 12px 0 12px 10px;
+	padding: 12px 0 12px 0;
 	font-family: 'Rockwell', serif;
 	text-decoration: none;
 	text-align: center;
@@ -293,8 +293,7 @@ header .feed-back .feed-back-btn:hover {
 	content: '';
 	width: 24px;
 	height: 24px;
-	left: 50%;
-	transform: translateX(-50%);
+	left: 60%;
 	top: 12px;
 	background: url('../images/navigation-xs-touch.png') no-repeat;
 } 
