@@ -37,15 +37,18 @@ header{background: #fff;}
 .screen__splash .row .screen-splash-header{font-size: 35px; line-height: 35px;}
 .screen__splash .row .screen-splash-paragraph{font-size: 25px; line-height: 25px;}
 .screen__splash .row .main-screen-shape{width: 72px; height: 80px;}
-.webhost-services-shape img{width: 118px; height: 119px;}
-.webhost-services-header {font-size: 23px; line-height: 23px;}
-.webhost-services-paragraph {font-size: 13px; line-height: 20px; width: 217px;}
-.domain-services-com {font-size: 82px; line-height: 82px;}
-.domain-services-header {font-size: 23px; line-height: 23px;}
-.domain-services-paragraph {font-size: 13px; line-height: 20px; width: 217px;}
+.webhost-services-shape img{width: 88px; height: 89px;}
+.webhost-services-header {font-size: 20px; line-height: 20px;}
+.webhost-services-paragraph {font-size: 13px; line-height: 20px; width: 140px;}
+.webhost-services-link {padding: 15px 40px 15px 40px;}
+.domain-services-com {font-size: 50px; line-height: 50px;}
+.domain-services-header {font-size: 20px; line-height: 20px;}
+.domain-services-paragraph {font-size: 13px; line-height: 20px; width: 140px;}
+.domain-services-link {padding: 15px 40px 15px 40px;}
 .testimonial-group {margin: 40px 0 0 0;}
-.testimonial-group-info {margin: 35px 0;}
+.testimonial-group-info {margin: 45px 0;}
 .testimonial-group:first-child {margin: 0;}
 .testimonial-group:last-child {margin: 0;}
-.testimonial-title-photo {top: 100px;}
+.testimonial-title-photo {top: 170px;}
+.clients-logos {margin-top: 10px;}
 }
